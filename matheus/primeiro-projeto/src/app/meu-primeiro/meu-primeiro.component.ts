@@ -4,8 +4,9 @@ import { Component } from '@angular/core';
 @Component({
 	selector: 'meu-primeiro-component',
 	template: `
-		<p>Meu primeiro componente com Angular 2</p>
+		<p>Modelo de Tabela</p>
 	`
 })
 
 export class MeuPrimeiroComponent { }
+

@@ -1,3 +1,4 @@
+import { TabelaModule } from './tabela/tabela.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,9 +13,12 @@ import { MeuPrimeiroComponentPorLinhaDeComandoComponent } from './meu-primeiro-c
     MeuPrimeiroComponentPorLinhaDeComandoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TabelaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
