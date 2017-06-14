@@ -2,16 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ListagemComponent } from './../listagem/listagem.component';
+import { BuscaComponent } from './../busca/busca.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-    ListagemComponent
+    ListagemComponent,
+    BuscaComponent
   ],
   exports: [
-    ListagemComponent
+    ListagemComponent,
+    BuscaComponent
   ]
 })
 export class TabelaModule { }
