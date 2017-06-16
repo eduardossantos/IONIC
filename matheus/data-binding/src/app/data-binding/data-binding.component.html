@@ -6,4 +6,29 @@
 
     </article>
 
+    <article>
+
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-danger">Danger</option>
+        <option value="alert-info">Info</option>
+        <option value="alert-warning">Warning</option>
+      </select>
+      <br />
+
+      <div class="alert {{ classe.value }} " role="alert">Sucesso</div>
+
+      <div class="alert alert-danger" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'" role="alert">Sucesso</div>
+
+      <button class="btn btn-primary">Clique aqui</button>
+
+      <input type="text" (keypress)="OnkeyPress(texto.value)" (blur)="SalvandoConteudo(texto.value)" name="" value="" #texto >
+      Conteúdo:
+      {{conteudoAtual}}
+
+      Conteúdo Salvo:
+      {{conteudoSalvo}}
+      
+    </article>
+
 </section>

@@ -9,7 +9,18 @@ export class DataBindingComponent implements OnInit {
 
   url: string = 'http://omatheuslima.com.br';
 
+  conteudoAtual: any = '';
+  conteudoSalvo: any = '';
+
   constructor() { }
+  
+  OnkeyPress (evento){
+    this.conteudoAtual = evento;
+  }
+
+  SalvandoConteudo(texto){
+    this.conteudoSalvo = texto;
+  }
 
   ngOnInit() {
   }
