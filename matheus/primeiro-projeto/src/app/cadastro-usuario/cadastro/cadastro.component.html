@@ -1,0 +1,20 @@
+<h1>Cadastro de Usuário</h1>
+<form>
+  <label for="Nome">
+    Nome:
+    <input type="text" name="nome" />
+  </label>
+  <label for="E-mail">
+    E-mail:
+    <input type="email" name="email" />
+  </label>
+  Tipo:
+  <ul>
+    <li *ngFor="let tipo of tipos">
+      <label for="Tipo">
+        {{tipo}}:
+        <input type="radio" name="tipo" value="{{tipo}}" />
+      </label>
+    </li>
+  </ul>
+</form>
