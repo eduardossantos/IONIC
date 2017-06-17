@@ -11,6 +11,7 @@ export class DataBindingComponent implements OnInit {
 
   conteudoAtual: any = '';
   conteudoSalvo: any = '';
+  nome: any = 'Matheus';
 
   constructor() { }
   
