@@ -1,0 +1,20 @@
+<div class="alert" [class.alert-success]="aba == 'sucesso'" (click)="aba ='sucesso'" role="alert">Sucesso</div>
+<div class="alert alert-info" (click)="aba ='erro'" role="alert">Informação</div>
+<div class="alert alert-warning" role="alert">Alerta</div>
+<div class="alert alert-danger" role="alert">Erro</div><p>
+
+<br />
+<br />
+
+<br />
+<div [ngSwitch]="aba">
+  <div *ngSwitchCase="'sucesso'" class="alert alert-success" role="alert">
+    Sucesso
+  </div>
+  <div *ngSwitchCase="'erro'" class="alert alert-danger" role="alert">
+    Erro
+  </div>
+  <div *ngSwitchDefault class="alert" role="alert">
+    Default
+  </div>
+</div>
