@@ -1,0 +1,11 @@
+<nav class="navbar navbar-static-top" [ngClass]="{
+  'navbar-default': corTopo == 1,
+  'navbar-inverse': corTopo == 2
+}" >
+  <div class="container">
+    
+  </div>
+</nav>
+
+
+<button (click)="corTopo = corTopo == 1 ? 2 : 1">teste</button>
