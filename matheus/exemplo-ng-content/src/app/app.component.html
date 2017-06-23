@@ -1,14 +1,26 @@
-<app-exemplo-ng-content>
-  <div class="titulo">Titulo</div>
-  <div class="corpo">Conteudo passando para o componente</div>
-  <div class="titulo2">Titulo2</div>
-  <div class="corpo2">Conteudo passando para o componente2</div>
-</app-exemplo-ng-content>
+<h5>
+NG-IF - {{cursos.length}}
+</h5>
+
+<div *ngIf="cursos.length > 0">
+Vejamos
+</div>
+
+<button (click)="insertCurso()">Insert</button>
+
+
+<br />
+<br />
+
+NG ELSE
+
+<div *ngElse="cursos.length > 0">
+Vejamos
+</div>
+
 
 <br />
 
-Diretiva customizada:
 
 <diretivas-customizadas></diretivas-customizadas>
 
-<br />
