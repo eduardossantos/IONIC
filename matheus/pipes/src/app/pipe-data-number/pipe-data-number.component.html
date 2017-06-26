@@ -1,0 +1,24 @@
+Teste:
+
+{{ teste | json }}
+
+<br />
+Teste Data: {{ teste.data }}
+<br />
+Teste Número: {{ teste.numero | number: '1.1-1' }}
+<br />
+Teste Moeda: {{ teste.moeda | currency: 'BRL' : true }}
+
+<br />
+
+<input type="text" [(ngModel)]="filtro" />
+<button>Teste</button>
+
+<table>
+  <tr *ngFor="let test of teste1 | pipeCriado:'ava'">
+    <td>{{ test.desc }}</td>
+    <td>{{ test.data }}</td>
+    <td>{{ test.numero }}</td>
+    <td>{{ test.moeda }}</td>
+  </tr>
+</table>
