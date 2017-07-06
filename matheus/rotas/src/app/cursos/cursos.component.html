@@ -1,0 +1,13 @@
+<p>
+  cursos works!
+</p>
+<br />
+      <div class="collection">
+        <a *ngFor="let curso of cursos" [routerLink]="['/curso', curso.id]" 
+         class="collection-item">{{ curso.nome }}</a>
+      </div>
+
+      <br />
+
+
+<app-modal></app-modal>
